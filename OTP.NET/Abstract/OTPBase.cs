@@ -11,7 +11,7 @@ namespace OTP.NET.Abstract
         {
             if (secretKey is null) throw new ArgumentNullException(nameof(secretKey));
 
-            if (secretKey.Length > 0) throw new ArgumentException("secretKey empty");
+            if (!(secretKey.Length > 0)) throw new ArgumentException("secretKey empty");
 
             _secretKey = new InMemoryKey(secretKey);
             _hashMode = mode;
