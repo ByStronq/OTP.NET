@@ -46,7 +46,7 @@ namespace OTP.NET.Abstract
             return truncatedValue.ToString().PadLeft(digitCount, '0');
         }
 
-        protected bool Verify(long initialStep, string valueToVerify, out long matchedStep, VerificationWindow window)
+        protected bool Verify(long initialStep, string valueToVerify, out long matchedStep, VerificationWindow? window)
         {
             window ??= new VerificationWindow();
 

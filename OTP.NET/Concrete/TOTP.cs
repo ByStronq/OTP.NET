@@ -55,7 +55,7 @@ namespace OTP.NET.Concrete
 
         public bool VerifyTotp(DateTime timestamp, string totp, out long timeStepMatched, VerificationWindow? window = null) => VerifyTotpForSpecificTime(_correctedTime.GetCorrectedTime(timestamp), totp, window, out timeStepMatched);
 
-        private bool VerifyTotpForSpecificTime(DateTime timestamp, string totp, VerificationWindow window, out long timeStepMatched)
+        private bool VerifyTotpForSpecificTime(DateTime timestamp, string totp, VerificationWindow? window, out long timeStepMatched)
         {
             var initialStep = CalculateTimeStepFromTimestamp(timestamp);
 
