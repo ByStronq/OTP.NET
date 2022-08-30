@@ -39,7 +39,7 @@ namespace OTP.NET.Concrete
 
             using var hmac = CreateHmacHash(mode);
 
-            byte[] key = this.GetCopyOfKey();
+            byte[] key = GetCopyOfKey();
 
             try
             {
