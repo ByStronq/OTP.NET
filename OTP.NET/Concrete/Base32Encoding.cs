@@ -20,7 +20,7 @@
                 if (bitsRemaining > 5)
                 {
                     mask = cValue << (bitsRemaining - 5);
-                    curByte = (byte)(curByte | mask);
+                    curByte = (byte) (curByte | mask);
                     bitsRemaining -= 5;
                 }
                 else
