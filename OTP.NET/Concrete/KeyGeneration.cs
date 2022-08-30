@@ -30,13 +30,6 @@ namespace OTP.NET.Concrete
             return DeriveKeyFromMaster(masterKey, KeyUtilities.GetBigEndianBytes(serialNumber), mode);
         }
 
-        private static HashAlgorithm GetHashAlgorithmForMode(OTPHashMode mode) => mode switch
-        {
-            OTPHashMode.Sha256 => SHA256.Create(),
-            OTPHashMode.Sha512 => SHA512.Create(),
-            _ => SHA1.Create()
-        };
-
         private static int LengthForMode(OTPHashMode mode) => mode switch
         {
             OTPHashMode.Sha256 => 32,
