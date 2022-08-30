@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTP.NET", "OTP.NET\OTP.NET.csproj", "{53453023-E63F-43E3-AA60-3CEE983DC8D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTP.NET.Test.Console", "OTP.NET.Test.Console\OTP.NET.Test.Console.csproj", "{1A6CBDA5-172F-425B-AF3D-44E84C026648}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{53453023-E63F-43E3-AA60-3CEE983DC8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53453023-E63F-43E3-AA60-3CEE983DC8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53453023-E63F-43E3-AA60-3CEE983DC8D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A6CBDA5-172F-425B-AF3D-44E84C026648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A6CBDA5-172F-425B-AF3D-44E84C026648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A6CBDA5-172F-425B-AF3D-44E84C026648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A6CBDA5-172F-425B-AF3D-44E84C026648}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
