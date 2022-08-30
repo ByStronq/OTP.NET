@@ -1,6 +1,6 @@
 ﻿namespace OTP.NET.Concrete
 {
-    public enum OTPHashMode
+    public enum OTPHashMode : byte
     {
         Sha1,
         Sha256,
