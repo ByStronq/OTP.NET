@@ -49,7 +49,7 @@
 
             foreach (byte b in input)
             {
-                nextChar = (byte)(nextChar | (b >> (8 - bitsRemaining)));
+                nextChar = (byte) (nextChar | (b >> (8 - bitsRemaining)));
                 returnArray[arrayIndex++] = ValueToChar(nextChar);
 
                 if (bitsRemaining < 4)
