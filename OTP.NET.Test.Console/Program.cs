@@ -7,6 +7,7 @@ var key = KeyGeneration.GenerateRandomKey(mode);
 var base32String = Base32Encoding.ToString(key);
 
 Console.WriteLine($"Key: {base32String}\n");
+Console.WriteLine($"Base64: {Convert.ToBase64String(key)}\n");
 
 var base32Bytes = Base32Encoding.ToBytes(base32String);
 
