@@ -31,7 +31,7 @@ namespace OTP.NET.Abstract
         {
             byte[] hmacComputedHash = _secretKey.ComputeHmac(mode, data);
 
-            int offset = hmacComputedHash[hmacComputedHash.Length - 1] & 0x0F;
+            int offset = hmacComputedHash[^1] & 0x0F;
 
             return (hmacComputedHash[offset] & 0x7f) << 24
                 | (hmacComputedHash[offset + 1] & 0xff) << 16
