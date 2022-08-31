@@ -1,6 +1,6 @@
 ﻿namespace OTP.NET.Concrete
 {
-    internal class KeyUtilities
+    internal static class KeyUtilities
     {
         internal static void Destroy(byte[] sensitiveData)
         {
