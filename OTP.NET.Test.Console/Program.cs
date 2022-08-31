@@ -14,9 +14,11 @@ var base32Bytes = Base32Encoding.ToBytes(base32String);
 string? tempOtpCode = null;
 int? tempOtpRemainingTime = null;
 
+long counter = 0;
+
 while (true)
 {
-    // /*
+    /*
 
     #region TOTP
 
@@ -46,15 +48,15 @@ while (true)
 
     #endregion
 
-    // */
+    */
 
-    /*
+    // /*
 
     #region HOTP
 
         var hotp = new HOTP(base32Bytes, mode: mode, hotpSize: 8);
 
-        var hotpCode = hotp.ComputeHOTP(1);
+        var hotpCode = hotp.ComputeHOTP(counter++);
 
         if (tempOtpCode != hotpCode)
         {
@@ -64,6 +66,8 @@ while (true)
 
             Console.WriteLine(hotpCode);
         }
+
+        Console.ReadKey();
 
     #endregion
 
