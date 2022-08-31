@@ -12,7 +12,7 @@ Console.WriteLine($"Base64: {Convert.ToBase64String(key)}\n");
 var base32Bytes = Base32Encoding.ToBytes(base32String);
 
 string? tempOtpCode = null;
-int? tempOtpRemainingTime = null;
+// int? tempOtpRemainingTime = null;
 
 long counter = 0;
 
